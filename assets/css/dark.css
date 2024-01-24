@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-  background: #fff !important;
+  background: #0f172a !important;
 }
 body .text-primary {
   color: #f99417 !important;
@@ -48,10 +48,9 @@ body.loading .loading-text .ball:nth-child(4) {
 }
 
 header {
-  background: rgba(255, 255, 255, 0.31);
-  backdrop-filter: blur(13.5px);
-  -webkit-backdrop-filter: blur(13.5px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  background: rgba(15, 23, 42, 0.27);
+  backdrop-filter: blur(16.4px);
+  -webkit-backdrop-filter: blur(16.4px);
 }
 header .navbar-brand {
   font-weight: 700;
@@ -160,7 +159,7 @@ header .btn-icon:hover, header .btn-icon:focus {
 }
 .hero-image .circle {
   position: absolute;
-  background: #f9f9f9;
+  background: #25282e;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -197,7 +196,7 @@ header .btn-icon:hover, header .btn-icon:focus {
   animation: rotate 10s linear infinite;
   font-weight: 200;
   font-family: "Poppins", sans-serif;
-  fill: #0f172a;
+  fill: rgba(249, 249, 249, 0.7294117647);
 }
 .hero-image .circle h3 {
   font-family: "Poppins", sans-serif;
@@ -247,7 +246,7 @@ header .btn-icon:hover, header .btn-icon:focus {
 .hero .subtitle {
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
-  color: #607274;
+  color: rgba(249, 249, 249, 0.7294117647);
   font-size: 0.937rem;
   margin-bottom: 0;
   text-align: justify;
@@ -272,7 +271,7 @@ header .btn-icon:hover, header .btn-icon:focus {
 .hero-bottom p {
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
-  color: #607274;
+  color: rgba(249, 249, 249, 0.7294117647);
   font-size: 1rem;
   margin-top: auto;
   text-align: center;
@@ -308,14 +307,14 @@ header .btn-icon:hover, header .btn-icon:focus {
   width: 1px;
   display: block;
   position: relative;
-  background: #607274;
+  background: #0f172a;
   opacity: 0.4;
   margin-right: 24px;
 }
 .hero-bottom ul li {
   width: 42px;
   height: 42px;
-  background: #f9f9f9;
+  background: #3b3e44;
   border-radius: 12px;
   margin-right: 12px;
   display: flex;
@@ -332,11 +331,11 @@ header .btn-icon:hover, header .btn-icon:focus {
 }
 
 .tictac {
-  background: #f9f9f9;
+  background: #25282e;
   padding-top: 3rem;
   padding-bottom: 5rem;
   font-family: "Montserrat", sans-serif;
-  color: #607274;
+  color: rgba(249, 249, 249, 0.7294117647);
 }
 .tictac .title {
   font-size: 2.5rem;
@@ -346,10 +345,6 @@ header .btn-icon:hover, header .btn-icon:focus {
   color: #f99417;
   margin-bottom: 0;
   font-family: "Poppins", sans-serif;
-}
-.tictac .title:hover {
-  -webkit-animation: jello-horizontal 0.9s both;
-  animation: jello-horizontal 0.9s both;
 }
 .tictac .status {
   font-size: 1rem;
@@ -380,25 +375,25 @@ header .btn-icon:hover, header .btn-icon:focus {
   width: 90px;
   height: 90px;
   text-align: center;
-  border: 2px solid #607274;
+  border: 2px solid #f5e8c7;
   cursor: default;
   font-size: 30px;
   transition: background-color 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 .tictac .grid td:hover {
-  background: #607274;
+  background: #f5e8c7;
   color: black;
 }
 .tictac .scores {
   padding-top: 20px;
   margin: auto;
-  color: #607274;
+  color: #f5e8c7;
   font-size: 1rem;
 }
 .tictac .scores td {
   width: 90px;
   text-align: center;
-  border: 2px solid #f9f9f9;
+  border: 2px solid #25282e;
 }
 .tictac #scores-x {
   font-weight: bold;
@@ -602,64 +597,4 @@ header .btn-icon:hover, header .btn-icon:focus {
   100% {
     top: 0px;
   }
-}
-@-webkit-keyframes jello-horizontal {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-@keyframes jello-horizontal {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=dark.css.map */

@@ -185,14 +185,7 @@ var model = {
 
 
 
-var view = {
-    toggleEasterEgg: function (element) {
-        if (element.innerHTML === 'Tic-Tac-Toe') {
-            element.innerHTML = 'A Code is Forever';
-        } else {
-            element.innerHTML = 'Tic-Tac-Toe';
-        }
-    },
+var view = { 
     drawGrid: function (grid, userPlaysX) {
         document.getElementById('restart').style.display = 'none';
         for (var i = 0; i < grid.length; i++) {
@@ -223,7 +216,7 @@ var view = {
     },
     highlightWinnedCombination: function (combination) {
         for (var i = 0; i < combination.length; i++) {
-            document.getElementById('cell-' + combination[i]).style.background = '#25282e';
+            document.getElementById('cell-' + combination[i]).style.background = '#607274';
             document.getElementById('cell-' + combination[i]).style.color = '#f99417';
         }
     },

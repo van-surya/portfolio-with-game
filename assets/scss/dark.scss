@@ -1,5 +1,5 @@
 //  Portfolio-TicTac  v1.2 (https://github.com/van-surya)
-//  Copyright 2024 Surya Van Authors
+//  Copyright 2024 Surya Van Authors 
 //  Licensed under MIT (https://github.com/van-surya)
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -11,12 +11,12 @@ $dark: #0f172a;
 $like-dark: #25282e;
 $middle-purple: #424769;
 $light: #fff;
-$like-light: #f9f9f9;
+$like-light: #f9f9f9ba;
 $warning: #f5e8c7;
 $army: #607274;
 
 body {
-    background: $light !important;
+    background: $dark !important;
     & .text-primary {
         color: $primary !important;
     }
@@ -64,10 +64,9 @@ body.loading {
 }
 
 header {
-    background: rgba(255, 255, 255, 0.31);
-    backdrop-filter: blur(13.5px);
-    -webkit-backdrop-filter: blur(13.5px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    background: rgba(15, 23, 42, 0.27);
+    backdrop-filter: blur(16.4px);
+    -webkit-backdrop-filter: blur(16.4px);
     & .navbar-brand {
         font-weight: 700;
         text-transform: uppercase;
@@ -161,7 +160,7 @@ header {
         }
         & .circle {
             position: absolute;
-            background: $like-light;
+            background: $like-dark;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -192,7 +191,7 @@ header {
                     animation: rotate 10s linear infinite;
                     font-weight: 200;
                     font-family: $poppins;
-                    fill: $dark;
+                    fill: $like-light;
                 }
             }
             & h3 {
@@ -235,7 +234,7 @@ header {
     & .subtitle {
         font-weight: 400;
         font-family: $montserrat;
-        color: $army;
+        color: $like-light;
         font-size: 0.937rem;
         margin-bottom: 0;
         text-align: justify;
@@ -255,7 +254,7 @@ header {
         & p {
             font-weight: 400;
             font-family: $montserrat;
-            color: $army;
+            color: $like-light;
             font-size: 1rem;
             margin-top: auto;
             text-align: center;
@@ -286,14 +285,14 @@ header {
                 width: 1px;
                 display: block;
                 position: relative;
-                background: $army;
+                background: $dark;
                 opacity: 0.4;
                 margin-right: 24px;
             }
             & li {
                 width: 42px;
                 height: 42px;
-                background: $like-light;
+                background: #3b3e44;
                 border-radius: 12px;
                 margin-right: 12px;
                 display: flex;
@@ -313,11 +312,12 @@ header {
 }
 
 .tictac {
-    background: $like-light;
+    background: $like-dark;
     padding-top: 3rem;
     padding-bottom: 5rem;
     font-family: $montserrat;
-    color: $army;
+    color: $like-light;
+
     & .title {
         font-size: 2.5rem;
         text-align: center;
@@ -326,10 +326,6 @@ header {
         color: $primary;
         margin-bottom: 0;
         font-family: $poppins;
-        &:hover {
-            -webkit-animation: jello-horizontal 0.9s both;
-            animation: jello-horizontal 0.9s both;
-        }
     }
     & .status {
         font-size: 1rem;
@@ -364,7 +360,7 @@ header {
         width: 90px;
         height: 90px;
         text-align: center;
-        border: 2px solid $army;
+        border: 2px solid $warning;
         cursor: default;
         font-size: 30px;
         transition:
@@ -374,20 +370,20 @@ header {
     }
 
     .grid td:hover {
-        background: $army;
+        background: $warning;
         color: black;
     }
 
     .scores {
         padding-top: 20px;
         margin: auto;
-        color: $army;
+        color: $warning;
         font-size: 1rem;
     }
     .scores td {
         width: 90px;
         text-align: center;
-        border: 2px solid $like-light;
+        border: 2px solid $like-dark;
     }
 
     #scores-x {
@@ -405,6 +401,7 @@ header {
         text-align: center;
     }
 }
+ 
 
 @keyframes rotate {
     from {
@@ -604,66 +601,5 @@ header {
     }
     100% {
         top: 0px;
-    }
-}
-
-@-webkit-keyframes jello-horizontal {
-    0% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-    30% {
-        -webkit-transform: scale3d(1.25, 0.75, 1);
-        transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-        -webkit-transform: scale3d(0.75, 1.25, 1);
-        transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-        -webkit-transform: scale3d(1.15, 0.85, 1);
-        transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-        -webkit-transform: scale3d(0.95, 1.05, 1);
-        transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-        -webkit-transform: scale3d(1.05, 0.95, 1);
-        transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-}
-@keyframes jello-horizontal {
-    0% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-    30% {
-        -webkit-transform: scale3d(1.25, 0.75, 1);
-        transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-        -webkit-transform: scale3d(0.75, 1.25, 1);
-        transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-        -webkit-transform: scale3d(1.15, 0.85, 1);
-        transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-        -webkit-transform: scale3d(0.95, 1.05, 1);
-        transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-        -webkit-transform: scale3d(1.05, 0.95, 1);
-        transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
     }
 }
