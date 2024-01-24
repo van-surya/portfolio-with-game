@@ -187,7 +187,6 @@ header .btn-icon:hover, header .btn-icon:focus {
 .hero-image .circle svg {
   display: block;
   width: 100%;
-  height: 300px;
   letter-spacing: 0.52em;
   position: absolute;
 }
