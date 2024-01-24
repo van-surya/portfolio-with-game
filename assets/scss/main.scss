@@ -159,8 +159,19 @@ header {
                 }
             }
         }
-        & .circle {
+        & .circle-wrap {
             position: absolute;
+            bottom: -30px;
+            right: -8px;
+            @media (min-width: 992px) { 
+                right: 30px;
+            }
+            @media (min-width: 1200px) { 
+                bottom: -60px;
+                right: 0;
+            }
+        }
+        & .circle {
             background: $like-light;
             border-radius: 50%;
             display: flex;
@@ -168,22 +179,17 @@ header {
             align-items: center;
             width: 120px;
             height: 120px;
-            bottom: -30px;
-            right: -8px;
             @media (min-width: 992px) {
                 width: 180px;
                 height: 180px;
-                right: 30px;
             }
             @media (min-width: 1200px) {
                 width: 240px;
                 height: 240px;
-                bottom: -60px;
-                right: 0;
             }
             svg {
                 display: block;
-                width: 100%; 
+                width: 100%;
                 letter-spacing: 0.52em;
                 position: absolute;
                 text {
@@ -317,7 +323,7 @@ header {
     padding-bottom: 5rem;
     font-family: $montserrat;
     color: $army;
-    & .title { 
+    & .title {
         font-size: 2.5rem;
         text-align: center;
         font-weight: 700;

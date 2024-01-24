@@ -158,8 +158,23 @@ header .btn-icon:hover, header .btn-icon:focus {
     width: 440px;
   }
 }
-.hero-image .circle {
+.hero-image .circle-wrap {
   position: absolute;
+  bottom: -30px;
+  right: -8px;
+}
+@media (min-width: 992px) {
+  .hero-image .circle-wrap {
+    right: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-image .circle-wrap {
+    bottom: -60px;
+    right: 0;
+  }
+}
+.hero-image .circle {
   background: #f9f9f9;
   border-radius: 50%;
   display: flex;
@@ -167,22 +182,17 @@ header .btn-icon:hover, header .btn-icon:focus {
   align-items: center;
   width: 120px;
   height: 120px;
-  bottom: -30px;
-  right: -8px;
 }
 @media (min-width: 992px) {
   .hero-image .circle {
     width: 180px;
     height: 180px;
-    right: 30px;
   }
 }
 @media (min-width: 1200px) {
   .hero-image .circle {
     width: 240px;
     height: 240px;
-    bottom: -60px;
-    right: 0;
   }
 }
 .hero-image .circle svg {
