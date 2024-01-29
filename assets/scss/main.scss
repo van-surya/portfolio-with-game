@@ -163,10 +163,10 @@ header {
             position: absolute;
             bottom: -30px;
             right: -8px;
-            @media (min-width: 992px) { 
+            @media (min-width: 992px) {
                 right: 30px;
             }
-            @media (min-width: 1200px) { 
+            @media (min-width: 1200px) {
                 bottom: -60px;
                 right: 0;
             }
@@ -179,6 +179,10 @@ header {
             align-items: center;
             width: 120px;
             height: 120px;
+            &:hover {
+                -webkit-animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+                animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+            }
             @media (min-width: 992px) {
                 width: 180px;
                 height: 180px;
@@ -194,7 +198,7 @@ header {
                 position: absolute;
                 text {
                     transform-origin: 50% 50%;
-                    animation: rotate 10s linear infinite;
+                    // animation: rotate 10s linear infinite;
                     font-weight: 200;
                     font-family: $poppins;
                     fill: $dark;
@@ -670,5 +674,72 @@ header {
     100% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
+    }
+}
+
+@-webkit-keyframes shake-lr {
+    0%,
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    10% {
+        -webkit-transform: rotate(8deg);
+        transform: rotate(8deg);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    30%,
+    50%,
+    70% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    80% {
+        -webkit-transform: rotate(-8deg);
+        transform: rotate(-8deg);
+    }
+    90% {
+        -webkit-transform: rotate(8deg);
+        transform: rotate(8deg);
+    }
+}
+@keyframes shake-lr {
+    0%,
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    10% {
+        -webkit-transform: rotate(8deg);
+        transform: rotate(8deg);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    30%,
+    50%,
+    70% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    80% {
+        -webkit-transform: rotate(-8deg);
+        transform: rotate(-8deg);
+    }
+    90% {
+        -webkit-transform: rotate(8deg);
+        transform: rotate(8deg);
     }
 }
