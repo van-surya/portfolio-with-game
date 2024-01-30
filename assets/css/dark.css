@@ -606,4 +606,100 @@ header .btn-icon:hover, header .btn-icon:focus {
   100% {
     top: 0px;
   }
+}
+.portfolio {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  background: #0f172a;
+}
+.portfolio h2 {
+  color: #f99417;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.portfolio h2::before {
+  margin-right: 8px;
+  width: 32px;
+  height: 2px;
+  background: #f99417;
+  content: "";
+  opacity: 0.5;
+}
+.portfolio h2::after {
+  margin-left: 8px;
+  width: 32px;
+  height: 2px;
+  background: #f99417;
+  content: "";
+  opacity: 0.5;
+}
+.portfolio .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.portfolio .button_prev {
+  width: 32px;
+  height: 32px;
+  color: rgba(249, 249, 249, 0.7294117647);
+  background: #f99417;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  z-index: 10;
+  margin-right: 8px;
+}
+.portfolio .button_prev:hover {
+  transition: all 0.5s ease;
+  opacity: 0.8;
+}
+.portfolio .button_next {
+  width: 32px;
+  height: 32px;
+  color: rgba(249, 249, 249, 0.7294117647);
+  background: #f99417;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+.portfolio .button_next:hover {
+  transition: all 0.5s ease;
+  opacity: 0.8;
+}
+.portfolio .portfolioSwape {
+  order: 2;
+  margin-top: 2rem;
+}
+.portfolio .portfolioSwape .card {
+  border: 2px solid #0f172a;
+  border-radius: 0;
+  color: #f99417;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.portfolio .portfolioSwape .card:hover {
+  transition: all 0.5s ease;
+  border: 2px solid #f99417;
+}
+.portfolio .portfolioSwape .card img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  height: auto;
 }/*# sourceMappingURL=dark.css.map */

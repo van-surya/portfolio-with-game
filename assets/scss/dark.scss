@@ -607,3 +607,101 @@ header {
         top: 0px;
     }
 }
+
+.portfolio {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background: $dark;
+    & h2 {
+        color: $primary;
+        font-family: $poppins;
+        font-size: 2rem;
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        &::before {
+            margin-right: 8px;
+            width: 32px;
+            height: 2px;
+            background: $primary;
+            content: "";
+            opacity: 0.5;
+        }
+        &::after {
+            margin-left: 8px;
+            width: 32px;
+            height: 2px;
+            background: $primary;
+            content: "";
+            opacity: 0.5;
+        }
+    }
+    & .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 1.5rem;
+        &_prev {
+            width: 32px;
+            height: 32px;
+            color: $like-light;
+            background: $primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            z-index: 10;
+            margin-right: 8px;
+            &:hover {
+                transition: all 0.5s ease;
+                opacity: 0.8;
+            }
+        }
+
+        &_next {
+            width: 32px;
+            height: 32px;
+            color: $like-light;
+            background: $primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            &:hover {
+                transition: all 0.5s ease;
+                opacity: 0.8;
+            }
+        }
+    }
+    & .portfolioSwape {
+        order: 2;
+        margin-top: 2rem;
+        & .card {
+            border: 2px solid $dark;
+            border-radius: 0;
+            color: $primary;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 0;
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: $poppins;
+            font-weight: 400;
+            &:hover {
+                transition: all 0.5s ease;
+                border: 2px solid $primary;
+            }
+            & img {
+                width: 100%;
+                aspect-ratio: 3/2;
+                object-fit: cover;
+                height: auto;
+            }
+        }
+    }
+}

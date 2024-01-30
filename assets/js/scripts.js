@@ -38,3 +38,26 @@ function toggleStylesheet() {
         }
     }, 2000);
 }
+
+var swiper = new Swiper(".portfolioSwape", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".button_next",
+        prevEl: ".button_prev",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+    },
+});
